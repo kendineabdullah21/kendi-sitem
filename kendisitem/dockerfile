@@ -1,0 +1,5 @@
+# Basit bir web sunucusu olan Nginx kullanıyoruz
+FROM nginx:alpine
+
+# index.html dosyanı sunucunun içine kopyalıyoruz
+COPY index.html /usr/share/nginx/html/index.html
