@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanici Girisi</title>
+      <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:5;
+        }
+ 
+        .giris {
+             border-radius: 6px;
+             box-shadow: 8px #000000;
+             transition: 0.5s;
+             cursor: zoom-in;}
+        
+        .giris:hover {
+              background-color: darkcyan;
+              opacity: 5px;}
+
+        .temizle {
+             border-radius: 6px;
+             box-shadow: 8px #000000;
+             transition: 0.5s;
+             cursor: zoom-in;}
+
+        .temizle:hover {
+             background-color: darkcyan;
+             opacity: 5px; }
+
+        
+      </style>
+    
+</head>
+<body>
+    <h1>Kullanici Giriş Platformu</h1>
+ <div class="login">
+
+<form action="#" method="post">
+
+    <label for="ad">Kullanici Adiniz:</label>
+      <input id="ad" type="text" placeholder=" Kullanici Adinizi Giriniz" style="background-color:  cadetblue;"" required size="20"> <br><br>
+ 
+    <label for="sifre">Şifrenizi Giriniz:</label>
+      <input id="sifre"  name="sifre" type="password" placeholder=" Şifrenizi Giriniz" style="background-color:  cadetblue;" minlength="8" maxlength="15" required size="20" > <br><br>
+
+    <label for="kimlik">T.C Kimlik Numaraniz:</label>
+      <input id="kimlik" name="kimlik" type="number" placeholder="Kimlik Numaraniz" pattern="11" maxlength="11" required style="background-color: cadetblue;" required> <br><br>
+
+    <label for="tarih">Doğum Tarihi:</label>
+      <input id="tarih" name="tarih" type="date" style="color: cadetblue;"> <br><br>
+
+      Doğum Yeri:
+    <select name="il" style="color: cadetblue;">
+       <option value="Ankara">Ankara</option>
+       <option value="Diyarbakir">Diyarbakir</option>
+       <option value="İstanbul">İstanbul</option>
+       <option value="İzmir">İzmir</option>
+       <option value="Aydin">Aydin</option></select> <br><br>
+
+    <label class="giris" for="giris" ></label>
+      <input class="giris" type="submit" name="giris" value="Giris" style="color: black;"> 
+
+    <label class="temizle" for="temizle"></label>
+      <input class="temizle" name="reset" type="reset" value="Temizle" style="color: black;">  <a href="#">Şifremi Unuttum</a> <br><br>
+
+  
+
+    <label style>
+      <input  name="secim" type="radio" value="Erkek"> Erkek
+      <input  name="secim" type="radio" value="Kadin"> Kadin
+      <input  name="secim" type="radio" value="Belirtmek İstemiyor" > Belirtmek İstemiyorum</label> <br><br>
+
+  </form>
+ </div>
+</body>
+</html>
